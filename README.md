@@ -8,13 +8,9 @@ test ok : python 3.7
 <br>
 Usage:
 <br>
-
-<br>
-from fake_modules.utils.tools import * 
-<br>
 from fake_modules.fake_email import email
 <br>
-from fake_modules.fake_id import make_id,check_id
+from fake_modules.fake_id import id
 <br>
 from fake_modules.fake_ip import ip
 <br>
