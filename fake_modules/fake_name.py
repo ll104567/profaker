@@ -1,6 +1,6 @@
 import random
 
-def name(Language='cn', count=2):
+def _name(Language='cn', count=2):
     """生成随机用户名，参数Language为中文用户或英文用户，参数count为用户名位数"""
     if Language.lower() == 'cn':
         array1 = ['赵', '钱', '孙', '李', '周', '吴', '郑', '王', '冯', '陈', '褚', '卫', '蒋', '沈', '韩', '杨', '朱',
@@ -43,3 +43,12 @@ def name(Language='cn', count=2):
     else:
         return False
 
+def name(n=1):
+    s = []
+    for i in range(n):
+        s.append(_name())
+
+    if n == 1:
+        return s[0]
+    else:
+        return s

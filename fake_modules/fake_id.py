@@ -2,7 +2,7 @@ import random
 import string
 import time
 
-def make_id():
+def _make_id():
     """随机生成18为身份证"""
     ARR = (7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2)
     LAST = ('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2')
@@ -47,3 +47,12 @@ def check_id(ID):
             return False
     return True
 
+def id(n=1):
+    s = []
+    for i in range(n):
+        s.append(_make_id())
+
+    if n ==1:
+        return s[0]
+    else:
+        return s

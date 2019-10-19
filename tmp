@@ -1,0 +1,20 @@
+In [1]: from fake_modules.fake_name import name
+<br>
+
+<br>
+In [2]: name()
+<br>
+Out[2]: '范泰'
+<br>
+
+<br>
+In [3]: name()
+<br>
+Out[3]: '邹斌'
+<br>
+
+<br>
+In [4]: name(10)
+<br>
+Out[4]: ['于妍', '何盛', '廉发', '邬雅', '祁园', '马贵', '齐妹', '姚辰', '王悦', '贝荔']
+<br>
